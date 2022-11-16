@@ -1,0 +1,68 @@
+{
+  "users":[
+    {
+        "id":1,
+        "avatar": "https://cdn.vuetifyjs.com/images/lists/1.jpg",
+        "title": "Brunch this weekend?",
+        "subtitle": "Ali Connors I'll be in your neighborhood doing errands this weekend. Do you want to hang out?",
+        "country": "Russia",
+        "score": "<10",
+        "address":{
+            "city":"Moscow",
+            "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus repudiandae tempore voluptates mollitia impedit modi, illum distinctio excepturi molestiae, maxime reiciendis eligendi, incidunt pariatur nostrum quaerat suscipit non error quidem! "
+        }
+    },
+
+    {
+        "id":2,
+        "avatar": "https://cdn.vuetifyjs.com/images/lists/2.jpg",
+        "title": "Summer BBQ",
+        "subtitle": "To Alex, Scott, Jennifer Wish I could come, but I'm out of town this weekend.",
+        "country": "USA",
+        "score": ">20",
+        "address":{
+            "city":"Washington", 
+            "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus repudiandae tempore voluptates mollitia impedit modi, illum distinctio excepturi molestiae, maxime reiciendis eligendi, incidunt pariatur nostrum quaerat suscipit non error quidem! "
+        }
+    },
+
+    {
+        "id":3,
+        "avatar": "https://cdn.vuetifyjs.com/images/lists/3.jpg",
+        "title": "Oui oui",
+        "subtitle": "Sandra Do you have Paris recommendations? Have you ever been?",
+        "country": "USA",
+        "score": "<10",
+        "address":{
+            "city":"Washington", 
+            "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus repudiandae tempore voluptates mollitia impedit modi, illum distinctio excepturi molestiae, maxime reiciendis eligendi, incidunt pariatur nostrum quaerat suscipit non error quidem! "
+        }
+    },
+
+    {
+        "id":4,
+        "avatar": "https://cdn.vuetifyjs.com/images/lists/4.jpg",
+        "title": "Birthday gift",
+        "subtitle": "Trevor Hansen Have any ideas about what we should get Heidi for her birthday?",
+        "country": "Russia",
+        "score": ">20",
+        "address":{
+            "city":"Moscow",
+            "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus repudiandae tempore voluptates mollitia impedit modi, illum distinctio excepturi molestiae, maxime reiciendis eligendi, incidunt pariatur nostrum quaerat suscipit non error quidem! "
+        }
+    },
+
+    {
+        "id":5,
+        "avatar": "https://cdn.vuetifyjs.com/images/lists/5.jpg",
+        "title": "Recipe to try" ,
+        "subtitle": "Britta Holt We should eat this: Grate, Squash, Corn, and tomatillo Tacos.",
+        "country": "Russia",
+        "score": "<10",
+        "address":{
+            "city":"Moscow", 
+            "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus repudiandae tempore voluptates mollitia impedit modi, illum distinctio excepturi molestiae, maxime reiciendis eligendi, incidunt pariatur nostrum quaerat suscipit non error quidem! "
+        }
+    }
+] 
+}
