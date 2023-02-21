@@ -2,10 +2,18 @@
   <div class="wrap">
     <div class="app">
       <div class="app__select">
-        <v-select :options="country" label="Filter by country" v-model="selectCountry">
+        <v-select
+          :options="country"
+          label="Filter by country"
+          v-model="selectCountry"
+        >
         </v-select>
         <br />
-        <v-select :options="score" label="Filter by score" v-model="selectScore"></v-select>
+        <v-select
+          :options="score"
+          label="Filter by score"
+          v-model="selectScore"
+        ></v-select>
       </div>
       <router-view />
     </div>
@@ -13,41 +21,30 @@
   <v-footer></v-footer>
 </template>
 <script setup lang="ts">
-import { ref, onMounted, watch } from 'vue';
-import vSelect from '@/components/select/v-select.vue';
-import vFooter from '@/components/v-footer.vue';
+import { ref, onMounted, watch } from "vue";
+import vSelect from "@/components/select/v-select.vue";
+import vFooter from "@/components/v-footer.vue";
 
-import { userStore } from '@/stores/users';
-const users = userStore()
+import { userStore } from "@/stores/users";
+const users = userStore();
 
+const selectCountry = ref("All");
+const selectScore = ref("All");
 
-const selectCountry = ref('All')
-const selectScore = ref('All')
-
-const country = ref<string[]>([
-  'All',
-  'Russia',
-  'USA',
-])
-const score = ref<string[]>([
-  'All',
-  '>20',
-  '<10',
-])
-
+const country = ref<string[]>(["All", "Russia", "USA"]);
+const score = ref<string[]>(["All", ">20", "<10"]);
 
 watch(selectCountry, () => {
-  users.setCountry(selectCountry.value)
-})
+  users.setCountry(selectCountry.value);
+});
 watch(selectScore, () => {
-  users.setScore(selectScore.value)
-})
+  users.setScore(selectScore.value);
+});
 
 onMounted(() => {
-  users.setCountry(selectCountry.value)
-  users.setScore(selectScore.value)
-})
-
+  users.setCountry(selectCountry.value);
+  users.setScore(selectScore.value);
+});
 </script>
 <style lang="less" scoped>
 .wrap {
@@ -76,11 +73,11 @@ onMounted(() => {
 .list-enter-from,
 .list-leave-to {
   opacity: 0;
-  transform: translate(30px, 0)
+  transform: translate(30px, 0);
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width: 992px) {
   .app {
     flex-direction: column;
 
@@ -88,9 +85,9 @@ onMounted(() => {
       margin-bottom: 30px;
     }
   }
-
 }
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {}
+@media only screen and (max-width: 768px) {
+}
 </style>
